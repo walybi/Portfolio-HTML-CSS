@@ -1,10 +1,60 @@
 /**************************
     Commun to all pages
 ***************************/
+body{
+        background: url(../images/darkness.png);
+}
 
 /*********************
         Header
 **********************/
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: white;
+}
+.logo{
+        background-color: #cccccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+}
+
+h1{
+        font-size: 28px;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+}
+
+.nav{
+        padding:0 20px;
+}
+ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+}
+
+.v-bar{
+        padding-right:10px;
+        border-right: solid 1px #777777;
+        margin-right: 10px;
+}
+
+li a{
+        text-decoration: none;
+        color: #777777;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+}
+
 
 /*********************
         Footer
