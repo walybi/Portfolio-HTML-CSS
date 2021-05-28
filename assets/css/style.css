@@ -3,7 +3,9 @@
 ***************************/
 body{
         background: url(../images/darkness.png);
+        box-sizing: border-box;
 }
+
 
 a{
         text-decoration: none;
@@ -36,6 +38,7 @@ header{
         align-items: center;
         height: 100%;
         padding: 0 20px;
+
 }
 
 h1{
@@ -104,11 +107,12 @@ footer p{
 main{
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 75%;
         margin: 100px auto 40px auto;
         background-color: white;
         border-radius: 1%;
         border: solid 1px #cccccc;
+        min-height: calc(100vh - 50px);
 }
 
 #page-title{
@@ -124,9 +128,8 @@ h2{
 hr{
         border: 1px solid black ;
         border-radius: 100%;
-        width: 100%;
-        margin-bottom: 20px;
         width: 90%;
+        margin-bottom: 20px;
 }
 
 #profile-pic{
@@ -152,7 +155,38 @@ hr{
 /*********************
         contact
 **********************/
+#contact-content{
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+        margin: 20px auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        color: black;
+}
+label{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: black;
+}
 
+input{
+        margin: 10px 0;
+        height: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+}
+textarea{
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+}
+button{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: black;
+        width: 80px;
+}
 /*********************
         Portfolio
 **********************/
