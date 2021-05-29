@@ -14,7 +14,12 @@ a{
         font-weight: 200;
 }
 
-
+@media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .portfolioContent{
+            width: 50%;
+        }
+      }
 
 /*********************
         Header
@@ -66,8 +71,8 @@ ul{
 
 a:hover{
         color: black;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 500;
 }
 
 
@@ -190,3 +195,33 @@ button{
 /*********************
         Portfolio
 **********************/
+#portfolio-content{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+
+}
+.project-box{
+        margin: 10px auto;
+        position: relative;
+}
+
+.portfolio-image{
+        width: 300px;
+        height: 200px;
+        border-radius:15px;
+}
+
+h3{
+        background-color: #cccccc;
+        height: 40px;
+        width: 300px;
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
