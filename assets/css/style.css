@@ -1,32 +1,15 @@
-/**************************
-    Commun to all pages
-***************************/
 body{
         background: url(../images/darkness.png);
-        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 }
 
-
-a{
-        text-decoration: none;
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        .portfolioContent{
-            width: 50%;
-        }
-      }
 
 /*********************
         Header
 **********************/
 header{
-        position: fixed;
-        top: 0;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -34,194 +17,85 @@ header{
         background-color: white;
         border-bottom: #cccccc 1px solid;
         width: 100%;
-        
 }
 .logo{
         background-color: #cccccc;
+        height: 100%;
+        padding: 0 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        padding: 0 20px;
-
+}
+h1{
+        margin: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
 }
 
-h1{
-        font-size: 28px;
+h1 a{
         color: black;
+        font-size: 28px;
         font-family: 'Lato', sans-serif;
-        font-weight: 300;
+        font-weight: 900;
+        text-decoration: none;
 }
 
 .nav{
-        padding:0 20px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 10px;
 }
 
 ul{
+        list-style-type: none ;
+        margin: 0;
+        padding: 0;
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
+        justify-content: center;
+        align-items: center;
 }
-
 .v-bar{
-        padding-right:10px;
+        padding-right:5px;
         border-right: solid 1px black;
-        margin-right: 10px;
+        margin-right: 5px;
 }
-
-a:hover{
+li a{
+        text-decoration: none;
         color: black;
-        font-size: 25px;
-        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
 }
-
 
 /*********************
         Footer
 **********************/
 footer{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background: white;
-        height: 50px;
-        padding: 0 10px 0 20px;
+        background-color: white;
         border-top: solid #cccccc 8px;
         width: 100%;
+        height: 50px;
 }
-
-footer div{
+.footer-content{
+        padding: 5 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-right: 10px;
+        align-items: center;  
+        height: 100%;
 }
 
-footer p{
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 200;
-}
-
-
-
-/*********************
-        About me
-**********************/
-main{
-        display: flex;
-        flex-direction: column;
-        width: 75%;
-        margin: 100px auto 40px auto;
-        background-color: white;
-        border-radius: 1%;
-        border: solid 1px #cccccc;
-        min-height: calc(100vh - 50px);
-}
-
-#page-title{
-        margin: 20px 50px;
-}
-
-h2{
-        color: black;
-        font-size: 24px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-}
-hr{
-        border: 1px solid black ;
-        border-radius: 100%;
-        width: 90%;
-        margin-bottom: 20px;
-}
-
-#profile-pic{
-        width: 250px;
-        height: 250px;
-        margin: 20px auto;
-        border-radius: 100%;
-}
-#about-me-content {
-        margin: 40px auto;
-        width: 75%;     
-}
-
-#about-me-content p{
-        color: black;
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-        line-height: 1.8;
+.footer-content p{
         text-align: center;
-        
-}
-
-/*********************
-        contact
-**********************/
-#contact-content{
-        display: flex;
-        flex-flow: column wrap;
-        width: 90%;
-        margin: 20px auto;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 200;
         color: black;
-}
-label{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        color: black;
-}
-
-input{
-        margin: 10px 0;
-        height: 25px;
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
 }
-textarea{
-        margin: 10px 0;
+.footer-content p a{
+        text-decoration: none;
+        color: black;
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
-}
-button{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        color: black;
-        width: 80px;
-}
-/*********************
-        Portfolio
-**********************/
-#portfolio-content{
-        width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px auto;
-
-}
-.project-box{
-        margin: 10px auto;
-        position: relative;
-}
-
-.portfolio-image{
-        width: 300px;
-        height: 200px;
-        border-radius:15px;
-}
-
-h3{
-        background-color: #cccccc;
-        height: 40px;
-        width: 300px;
-        position: absolute;
-        bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
 }
