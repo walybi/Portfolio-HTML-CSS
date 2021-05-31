@@ -37,5 +37,5 @@ Project is created using :
 
             ## links
 
-- [Deployed link](https://walybi.github.io/Portfolio-HTML-CSS-/)
+- [Deployed link](https://walybi.github.io/Portfolio-HTML-CSS/)
 
