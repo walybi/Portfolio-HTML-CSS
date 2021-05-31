@@ -66,6 +66,12 @@ li a{
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
 }
+li a:hover{
+        
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+}
 
 /*********************
         Footer
@@ -100,22 +106,26 @@ footer{
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
 }
-
+.footer-content  a:hover{
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+}
 
 /*********************
         About me
 **********************/
 main{
-        min-height: calc(100vh - 58px);
+        min-height: calc(100vh - 150px);
         background-color: white;
         border: solid 1px #cccccc;
         margin: 20px auto;
         max-width: 960px;
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
+        padding: 20px 0;
         border-radius: 5px;
         border: solid 1px #777777;
 }
@@ -125,6 +135,7 @@ h2{
         font-size: 24px;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
+        padding: 0 20px;
 }
 hr{
         border: 1px solid black ;
@@ -150,4 +161,94 @@ hr{
         line-height: 1.8;
         text-align: center;
         
+}
+/*********************
+        contact
+**********************/
+#contact-content{
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+        margin: 20px auto;
+}
+label{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: black;
+}
+
+input{
+        margin: 10px 0;
+        height: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        padding: 0 10px;
+}
+textarea{
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        padding: 0 10px;
+}
+button{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: black;
+        width: 80px;
+}
+/* ********************
+        Portfolio
+**********************/
+
+#portfolio-content{
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+}
+
+.project-box{ 
+        margin: 10px ;
+        position: relative;
+}
+
+.portfolio-image{
+        width: 300px;
+        height: 200px;
+        border-radius:5px;
+        border: black 1px solid;
+}
+
+h3{
+        background-color: #cccccc;
+        height: 40px;
+        width: 300px;
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        border: black 1px solid;
+
+}
+
+.project-box a{
+        text-decoration: none;    
+}
+.project-box h3:hover{
+        height: 50px;
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+}
+
+@media only screen and (max-width: 720px){
+#portfolio-content {
+        width: 50%;
+        }
 }
